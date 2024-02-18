@@ -1,5 +1,6 @@
 package com.example.quiz
 
+import QuestionModel
 import QuizListAdapter
 import QuizModel
 import androidx.appcompat.app.AppCompatActivity
@@ -32,10 +33,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun getDataFromFirebase(){
         // Dummy Data
-        quizModelList.add(QuizModel("1", "Programming", "Code Questions", "10"))
-        quizModelList.add(QuizModel("2", "Geography", "Geography Knowledge", "15"))
-        quizModelList.add(QuizModel("3", "Arts", "Art related Questions", "12"))
-        quizModelList.add(QuizModel("4", "Maths", "Math Questions", "5"))
+
+        val listQuestionModel = mutableListOf<QuestionModel>()
+        listQuestionModel.add(QuestionModel("What is Android ?", mutableListOf("Language", "OS","System", "Service"), "OS"))
+        listQuestionModel.add(QuestionModel("Who owns Android ?", mutableListOf("Meta", "IBM","Google", "Microsoft"), "Google"))
+
+        quizModelList.add(QuizModel("1", "Programming", "Code Questions", "10", listQuestionModel))
+        quizModelList.add(QuizModel("2", "Geography", "Geography Knowledge", "15", listQuestionModel))
+        quizModelList.add(QuizModel("3", "Arts", "Art related Questions", "12", listQuestionModel))
+        quizModelList.add(QuizModel("4", "Maths", "Math Questions", "5", listQuestionModel))
         setupRecyclerView()
     }
 }

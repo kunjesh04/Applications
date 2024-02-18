@@ -10,8 +10,8 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="250dp"
-        android:src="@drawable/knowledge"/>
+        android:layout_height="200dp"
+        android:src="@drawable/knowledge" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,6 +27,7 @@
             android:text="Quizent"
             android:textStyle="bold"
             android:textSize="34sp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
             android:letterSpacing="0.1"
             android:textColor="@color/white"/>

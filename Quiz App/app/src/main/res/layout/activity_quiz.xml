@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".QuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/q_indicator"
+            android:text="Question 2/10"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/timer_icon"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@id/time_indicator"
+            android:layout_centerVertical="true"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5:55"
+            android:id="@+id/time_indicator"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:progress="20"
+        android:id="@+id/q_progress_indicator"/>
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="4dp"
+        android:layout_marginVertical="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/question_text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/round_corner"
+                android:backgroundTint="@color/blue"
+                android:textColor="@color/white"
+                android:gravity="center"
+                tools:text="What is Android OS ?"
+                android:layout_marginVertical="8dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Btn0"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/gray"
+                android:text="Option A"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingVertical="12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Btn1"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/gray"
+                android:text="Option B"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingVertical="12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Btn2"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/gray"
+                android:text="Option C"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingVertical="12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Btn3"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/gray"
+                android:text="Option D"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingVertical="12dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Next_Btn"
+                android:layout_marginVertical="4dp"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_gravity="end"
+                android:paddingHorizontal="40dp"
+                android:paddingVertical="12dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
