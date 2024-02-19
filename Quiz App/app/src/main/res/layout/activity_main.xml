@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Quizent"
+            android:text="Quizzent"
             android:textStyle="bold"
             android:textSize="34sp"
             android:layout_marginTop="5dp"
@@ -35,7 +35,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enahnce Your Knowledge"
+            android:text="Enhance Your Knowledge"
             android:textStyle="italic"
             android:textSize="18sp"
             android:layout_margin="16dp"
